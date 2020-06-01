@@ -1,0 +1,64 @@
+@import url(https://fonts.googleapis.com/css?family=Pacifico|Roboto:400,500);
+
+ h1 {
+  color: #eee;
+  font-family: 'Pacifico', cursive;
+  font-size: 42px;
+  float: left;
+  margin-left: 1em;
+}
+ h1>.title {
+  color: #3ab4a6;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+  text-decoration: none;
+  margin-inline-end: 201px;
+ }
+
+.header{
+  background:#333;
+  width:100%;
+  position: fixed;
+}
+
+.header:after{
+  content:"";
+  clear:both;
+  display:block;
+}
+
+.search{
+  float:right;
+  padding: 45px;
+}
+
+input{
+  border:none;
+  padding:10px;
+}
+
+li{
+  list-style:none;
+  float:left;
+}
+li .link{
+  float:left;
+  padding-inline-start: 50px;
+  padding-block-start: 50px; 
+}
+
+li .link:hover{
+  color:#000;
+ }
+
+
+.link{
+color:#fff;
+font-size: 20px;
+font-family: 'Fjalla One', sans-serif;
+text-decoration: none;
+text-transform: uppercase;
+}
+
+

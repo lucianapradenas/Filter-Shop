@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Noto+Sans+KR:wght@100;500&family=Oswald:wght@300&display=swap');
+
+
+footer {
+    background: #333;
+    width: 100%;
+    height: 170px;
+    margin-block-start: 10%;
+  }
+  .container{
+        display: flex;
+        justify-content: space-between;
+        padding-inline-start: 50px;
+        padding-inline-end: 60px;
+        padding-block-start: 40px;
+      }
+
+  .title4 {
+    line-height: 1.0;
+    color: #c5cbd3;
+    font-size:20px;
+    font-family: 'Fjalla One', sans-serif;
+  }
+  .item {
+    line-height: 1.0;
+    color: #c5cbd3;
+    font-size: 13px;
+    font-family: 'Oswald', sans-serif;
+   
+  }
+  .logo{
+    width: 50px;
+    height: 38px;
+    margin-block-end: 5px;
+  }
+  .copyryght {
+    text-align: center;
+    flex-direction:row;
+    font-family: 'Noto Sans KR', sans-serif;
+    color: #c5cbd3;
+    font-size: 12px;
+    background: #4f4e4e;
+  }

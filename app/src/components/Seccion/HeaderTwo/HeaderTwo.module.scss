@@ -1,0 +1,19 @@
+.Header {
+    padding: 50px 0 0;
+    text-align: center;
+    margin-bottom: 4rem;
+}
+    h2 {
+      text-transform: uppercase;
+      text-decoration: line-through;
+      width: 450px;
+      margin: 0 auto;
+      font-size: 50px;
+      text-decoration-color:#5cb0b4;
+    }
+   h2:hover{
+     color:#5cb0b4;
+     text-decoration: line-through;
+     text-decoration-color:black;
+   }
+  
