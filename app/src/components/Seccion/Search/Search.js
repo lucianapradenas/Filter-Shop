@@ -1,14 +1,13 @@
 import React from "react";
 import  styles from './Search.module.scss';
 
-const Search = ({  onSearch}) => (
+const Search = ({onSearch}) => (
   <div>
     <form className={styles.search} > 
       <input type="search"
         name="search"
         placeholder="Buscar.."
-  
-        onChange={onSearch} 
+      onChange={(e)=>this.searchSpace(e)} 
         />
 
      </form>
