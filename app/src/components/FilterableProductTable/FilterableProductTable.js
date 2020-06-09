@@ -29,6 +29,7 @@ class FilterableProductTable extends React.Component {
     render() {
       return (
         <div>
+          <p>las busquedas se realizan por nombre de producto (beta)</p>
           <SearchBar
             filterText={this.state.filterText}
             inStockOnly={this.state.inStockOnly}

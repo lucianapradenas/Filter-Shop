@@ -1,20 +1,17 @@
 import React from 'react';
-import ProductCategoryRow from './ProductCategoryRow/ProductCategoryRow';
+//import ProductCategoryRow from './ProductCategoryRow/ProductCategoryRow';
 import ProductRow from './ProductRow/ProductRow';
 import style from './cardlist.module.scss';
 
 class ProductTable extends React.Component {
     render() {
       const filterText = this.props.filterText;
-      const inStockOnly = this.props.inStockOnly;
   
       const rows = [];
   
       this.props.products.forEach((product) => {
-        if (product.name.indexOf(filterText) === -1) {
-          return;
-        }
-        if (inStockOnly && !product.stocked) {
+        //fuerzo a que la cadena de caracteres sean minusculas para mostrarlos
+        if (product.name.toLowerCase().indexOf(filterText) === -1) {
           return;
         }
         rows.push(

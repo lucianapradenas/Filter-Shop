@@ -1,4 +1,5 @@
 import React from 'react';
+import Style from './search.module.scss';
 
 class SearchBar extends React.Component {
     constructor(props) {
@@ -8,7 +9,10 @@ class SearchBar extends React.Component {
     }
     
     handleFilterTextChange(e) {
-      this.props.onFilterTextChange(e.target.value);
+      //fuerzo al cliente a escribir en minuscula para validarlo en el indexOf en el mismo nivel de caracter
+      let ingresar = e.target.value;
+      let devolver = ingresar.toLowerCase() 
+      this.props.onFilterTextChange(devolver);
     }
     
     handleInStockChange(e) {
@@ -20,9 +24,10 @@ class SearchBar extends React.Component {
         <form>
           <input
             type="text"
-            placeholder="Search..."
+            placeholder="Buscar Productos..."
             value={this.props.filterText}
             onChange={this.handleFilterTextChange}
+            className={Style.input}
           />
           {/*<p>
             <input
