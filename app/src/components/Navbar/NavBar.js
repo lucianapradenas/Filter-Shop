@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import styles from './style.module.scss';
-import Search from '../Seccion/Search/Search';
+import Search from '../FilterableProductTable/SearchBar/SearchBar';
 
 
 class Nav extends Component {
