@@ -30,7 +30,7 @@ function Footer() {
             <p className={styles.copyryght}>
               &#169; {year} EmmaShoes
               All Rights Reserved. 
-              Designed & Developed by
+              Designed & Developed by Luciana
             </p>
       </footer>
 

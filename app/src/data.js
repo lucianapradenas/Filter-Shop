@@ -1,16 +1,13 @@
-import imagen1 from "../images/zapato22m.jpg";
-import imagen2 from "../images/zapato17r.jpg";
-import imagen3 from   "../images/zapatoazul.jpg";
-import imagen4 from  "../images/zapatoazul2.jpg";
-import imagen5 from  "../images/zapatobordo.jpg";
-import imagen6 from  "../images/zapato16r.jpg";
-import imagen7 from   "../images/zapatonegro.jpg";
-import imagen8 from   "../images/zapato23m.jpg";
+import imagen1 from "./components/images/zapato22m.jpg";
+import imagen2 from "./components/images/zapato17r.jpg";
+import imagen3 from   "./components/images/zapatoazul.jpg";
+import imagen4 from  "./components/images/zapatoazul2.jpg";
+import imagen5 from  "./components/images/zapatobordo.jpg";
+import imagen6 from  "./components/images/zapato16r.jpg";
+import imagen7 from   "./components/images/zapatonegro.jpg";
+import imagen8 from   "./components/images/zapato23m.jpg";
 
-
-
-
-let data = [
+const Data = [
   {
     url: imagen1,
     name: "Umma Camel",
@@ -69,4 +66,4 @@ let data = [
   }
 ];
 
-export { data };
+export default Data;
