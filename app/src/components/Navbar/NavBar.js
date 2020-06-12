@@ -8,22 +8,26 @@ class Nav extends Component {
     super();
   
      this.state ={
-       products:data,
-       searchField:'',
+       products:[],
+       searchField:''
      };
     }
+    //this.setState({products:data});
+  
     onSearch = event => {
-     let keyword = event.target.value;
-     this.setState({searchField:keyword})
+     this.setState({searchField:event.target.value });
       }
 
+      onChange = e => {
+        this.onChange = this.onChange.bind(this);
+      }
   render() {
-    const {searchField } = this.state;
-    const SearchItems = data.filter(product =>
-     product.name.toLowerCase().includes(searchField.toLowerCase())
-    )
+    const { products, searchField } = this.state;
+    const productsFiltered = products.filter(product =>
+      product.name.toLowerCase().indexOf(searchField.toLowerCase() !== -1)
+    );
 
-    return (
+ return (
   <div className={styles.header}>
   <h1>Emma<a className={styles.title}>Shoes</a></h1> 
     <nav>
@@ -42,11 +46,11 @@ class Nav extends Component {
       <input type="search"
         name="search"
         placeholder="Buscar.."
-        value={searchField}
         onChange={(e)=>this.onSearch(e)} 
         />
      </form>
     </li>
+
     </ul>
     </nav>
   </div>  
