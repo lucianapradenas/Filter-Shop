@@ -1,9 +1,10 @@
 import React, {Component} from 'react';
 import styles from './style.module.scss';
-import Search from '../FilterableProductTable/SearchBar/SearchBar';
+import carrito from '../images/carrito.png'
 
 
 class Nav extends Component {
+
 
   render() {
     return (
@@ -17,11 +18,14 @@ class Nav extends Component {
       <li>
         <a className={styles.link} href="/">Productos</a>        
       </li>
+      <li>
+        <a className={styles.link} href="/">Quienes Somos</a>        
+      </li>
       <li className={styles.dropdown}>
         <a  className={styles.link} href="/">Contacto</a>       
       </li>
       <li>
-    <Search onChange={this.onSearch} />  
+     <img src={carrito} alt="carrito de compras" className={styles.carrito}/>
     </li>
     </ul>
     </nav>

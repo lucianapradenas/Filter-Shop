@@ -1,7 +1,7 @@
 import React from 'react';
 import SearchBar from './SearchBar/SearchBar';
-import ProductTable from './ProductTable/ProductTable'
-
+import ProductTable from './ProductTable/ProductTable';
+import styles from './SearchBar/search.module.scss';
 class FilterableProductTable extends React.Component {
     constructor(props) {
       super(props);
@@ -29,13 +29,15 @@ class FilterableProductTable extends React.Component {
     render() {
       return (
         <div>
-          <p>las busquedas se realizan por nombre de producto (beta)</p>
-          <SearchBar
+          <p className={styles.titleFilter}>las busquedas se realizan por nombre de producto (beta)</p>
+         <SearchBar
             filterText={this.state.filterText}
             inStockOnly={this.state.inStockOnly}
             onFilterTextChange={this.handleFilterTextChange}
             onInStockChange={this.handleInStockChange}
           />
+
+
           <ProductTable
             products={this.props.products}
             filterText={this.state.filterText}
