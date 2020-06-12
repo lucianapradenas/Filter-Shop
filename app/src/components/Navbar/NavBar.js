@@ -2,11 +2,10 @@ import React, {Component} from 'react';
 import styles from './style.module.scss';
 import Search from '../FilterableProductTable/SearchBar/SearchBar';
 
-
 class Nav extends Component {
-
   render() {
-    return (
+
+ return (
   <div className={styles.header}>
   <h1>Emma<a className={styles.title}>Shoes</a></h1> 
     <nav>
@@ -21,8 +20,9 @@ class Nav extends Component {
         <a  className={styles.link} href="/">Contacto</a>       
       </li>
       <li>
-    <Search onChange={this.onSearch} />  
+      <Search onChange={this.onSearch} />  
     </li>
+
     </ul>
     </nav>
   </div>  
